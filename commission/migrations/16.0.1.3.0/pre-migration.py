@@ -47,7 +47,7 @@ def _handle_settlement_line_commission_id(env):
     )
 
 
-@openupgrade.migrate(no_version=True)
+@openupgrade.migrate()
 def migrate(env, version):
     openupgrade.rename_tables(env.cr, table_renames)
     openupgrade.rename_models(env.cr, model_renames)
