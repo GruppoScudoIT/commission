@@ -11,6 +11,7 @@
         "account",
         "commission",
     ],
+    "external_dependencies": {"python": ["openupgradelib"]},
     "website": "https://github.com/OCA/commission",
     "maintainers": ["pedrobaeza"],
     "data": [
