@@ -2,6 +2,11 @@
 # Copyright 2023 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from openupgradelib import openupgrade
+import logging
+
+_logger = logging.getLogger(__name__)
+
+_logger.info("CARLO TOSO1")
 
 table_renames = [
     ("sale_commission", "commission"),

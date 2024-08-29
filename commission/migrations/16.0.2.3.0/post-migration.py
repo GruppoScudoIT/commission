@@ -1,6 +1,11 @@
 # Copyright 2023 Tecnativa - David Vidal
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from openupgradelib import openupgrade
+import logging
+
+_logger = logging.getLogger(__name__)
+
+_logger.info("CARLO TOSO2")
 
 
 @openupgrade.migrate()
