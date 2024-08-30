@@ -5,13 +5,12 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-_logger.info("CARLO TOSO2")
-
 
 @openupgrade.migrate()
 def migrate(env, version):
     """Convert the former `agent_line` m2m relation in `commission.line.mixin` into
     the new `settlement_line_ids` o2m relation."""
+    _logger.info("CARLO TOSO2")
     openupgrade.logged_query(
         env.cr,
         """

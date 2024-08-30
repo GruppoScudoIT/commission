@@ -6,8 +6,6 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-_logger.info("CARLO TOSO1")
-
 table_renames = [
     ("sale_commission", "commission"),
     ("sale_commission_settlement", "commission_settlement"),
@@ -49,6 +47,7 @@ def _handle_settlement_line_commission_id(env):
 
 @openupgrade.migrate()
 def migrate(env, version):
+    _logger.info("CARLO TOSO1")
     openupgrade.rename_tables(env.cr, table_renames)
     openupgrade.rename_models(env.cr, model_renames)
     _handle_settlement_line_commission_id(env)

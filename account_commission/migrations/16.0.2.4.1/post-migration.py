@@ -5,13 +5,13 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-_logger.info("CARLO TOSO3")
 
 @openupgrade.migrate()
 def migrate(env, version):
     """Fill new invoice_agent_line_id many2one from the old many2many agent_line
     equivalent table. This table always contain only one record on standard use.
     """
+    _logger.info("CARLO TOSO3")
     openupgrade.logged_query(
         env.cr,
         """
