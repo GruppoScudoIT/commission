@@ -27,4 +27,5 @@
     "demo": ["demo/commission_and_agent_demo.xml"],
     "installable": True,
     'pre_init_hook': '_pre_init_test',
+    'post_init_hook': '_post_init_test',
 }
