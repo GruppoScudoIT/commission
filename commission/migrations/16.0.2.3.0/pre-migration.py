@@ -45,9 +45,11 @@ def _handle_settlement_line_commission_id(env):
     )
 
 
-@openupgrade.migrate()
-def migrate(env, version):
+def migrate(cr, version):
     _logger.info("CARLO TOSO1")
-    openupgrade.rename_tables(env.cr, table_renames)
-    openupgrade.rename_models(env.cr, model_renames)
-    _handle_settlement_line_commission_id(env)
+    for old,new in table_renames:
+        cr.execute(f"ALTER TABLE {old} RENAME TO {new};")
+        _logger.info("Updated %s tables", cr.rowcount)
+    # openupgrade.rename_tables(env.cr, table_renames)
+    # openupgrade.rename_models(env.cr, model_renames)
+    # _handle_settlement_line_commission_id(env)
