@@ -18,5 +18,4 @@
         "views/sale_order_view.xml",
     ],
     "installable": True,
-    #'pre_init_hook': '_pre_init_test',
 }
