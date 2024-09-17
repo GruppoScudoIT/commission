@@ -7,7 +7,7 @@
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "category": "Invoicing",
     "license": "AGPL-3",
-    "depends": ["base","product"],
+    "depends": ["product"],
     "external_dependencies": {"python": ["openupgradelib"]},
     "website": "https://github.com/OCA/commission",
     "maintainers": ["pedrobaeza"],
