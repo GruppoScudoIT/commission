@@ -5,7 +5,7 @@ import logging
 _logger = logging.getLogger(__name__)
 _logger.info("CARLO TOSOB")
 
-def _pre_init_test(env):
+def _pre_init_test(cr):
     _logger.info("CARLO TOSOB1")
     table_renames = [
         ("sale_commission", "commission"),
@@ -15,6 +15,6 @@ def _pre_init_test(env):
         ("sale_commission_make_settle", "commission_make_settle"),
     ]
     for old,new in table_renames:
-        env.cr.execute(f"ALTER TABLE {old} RENAME TO {new};")
+        cr.execute(f"ALTER TABLE {old} RENAME TO {new};")
         
-    env.cr.commit()
+    cr.commit()
