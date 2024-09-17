@@ -7,13 +7,13 @@ import logging
 _logger = logging.getLogger(__name__)
 _logger.info("CARLO TOSO0")
 
-# table_renames = [
-#     ("sale_commission", "commission"),
-#     ("sale_commission_settlement", "commission_settlement"),
-#     ("sale_commission_make_invoice", "commission_make_invoice"),
-#     ("sale_commission_settlement_line", "commission_settlement_line"),
-#     ("sale_commission_make_settle", "commission_make_settle"),
-# ]
+table_renames = [
+    ("sale_commission", "commission"),
+    ("sale_commission_settlement", "commission_settlement"),
+    ("sale_commission_make_invoice", "commission_make_invoice"),
+    ("sale_commission_settlement_line", "commission_settlement_line"),
+    ("sale_commission_make_settle", "commission_make_settle"),
+]
 # model_renames = [
 #     ("sale.commission", "commission"),
 #     ("sale.commission.mixin", "commission.mixin"),
