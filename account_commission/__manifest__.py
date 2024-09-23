@@ -26,5 +26,4 @@
         "wizards/wizard_invoice.xml",
     ],
     "installable": True,
-    'post_init_hook': '_post_init_test',
 }
